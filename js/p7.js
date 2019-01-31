@@ -1,9 +1,7 @@
 window.circleAttrs=function (d,i) {
     var totalCt=window.colCt*window.rowCt;
     var rP=window.r/totalCt;
-    // return {"r":(i+1)*rP}
     return {"r":(totalCt-i)*rP}
-
 };
 
 window.line1Attrs=function (d,i) {

@@ -38,12 +38,13 @@ function setupspace() {
         .append("g")
         .attr("id",id+"_g")
         .attr("transform","translate("+window.margins.l+","+window.margins.t+")");
-    window.blackStroke={"stroke":"black","fill":"none"};
-    window.greenStroke={"stroke":"green","fill":"none"};
-    window.redStroke={"stroke":"red","fill":"none"};
-    window.blueStroke={"stroke":"blue","fill":"none"};
-    window.orangeStroke={"stroke":"orange","fill":"none"};
-    window.yellowStroke={"stroke":"yellow","fill":'none'};
+    var sw=10;
+    window.blackStroke={"stroke":"black","fill":"none","stroke-width":sw};
+    window.greenStroke={"stroke":"green","fill":"none","stroke-width":sw};
+    window.redStroke={"stroke":"red","fill":"none","stroke-width":sw};
+    window.blueStroke={"stroke":"blue","fill":"none","stroke-width":sw};
+    window.orangeStroke={"stroke":"orange","fill":"none","stroke-width":sw};
+    window.yellowStroke={"stroke":"yellow","fill":'none',"stroke-width":sw};
     updateWH();
 
     svg_g.append("rect")
